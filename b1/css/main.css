@@ -1,0 +1,312 @@
+
+/*-------------------------------------------  general -------------------------------------------------------*/
+body{
+text-align: center; 
+background: grey;
+background-image:url("http://i185.photobucket.com/albums/x122/becPOOP/mybak.png");
+background-repeat:repeat;
+background-attachment:fixed;
+font-family:arial;
+font-size:8pt;
+color:#333;
+}
+
+
+#wrapper{
+	width:800px;
+	background-color:#FFF;
+	position:absolute; 
+	top:10px; 
+	left:290px; 
+	-webkit-box-shadow: 0px 0px 5px #ececec;
+	-moz-box-shadow:    0px 0px 5px #ececec;
+	box-shadow:         0px 0px 5px #ececec;
+
+}
+
+#sidebarleft {
+margin: 5px;
+height: 260px;
+width:260px;
+background-color:#C66;
+float:left;
+left:0px;
+top:100px;
+position:fixed;
+padding-left:1px; 
+padding-right:1px;
+margin-top:0px;
+-webkit-box-shadow: 0px 0px 5px #ececec;
+	-moz-box-shadow:    0px 0px 5px #ececec;
+	box-shadow:         0px 0px 5px #ececec;
+
+}
+
+/*-------------------------------------------  header -------------------------------------------------------*/
+
+header{
+	border-bottom: 1px solid #bbb8bf; /*changes color of border under project name*/
+}
+
+h1 {
+display:block;
+font-weight:normal;
+font-family:impact;
+font-size:30pt;
+line-height:24pt; 
+letter-spacing:1px;
+color:white;
+text-align:left;
+text-transform:uppercase;
+background-color:black;
+border-bottom-color:#bbbbbb;
+border-bottom-width:1px;
+border-bottom-style:dashed;
+border-left-style:solid;
+border-left-color:#bbbbbb;
+border-left-width:0px;
+border-right-style:solid;
+border-right-color:#bbbbbb;
+border-right-width:0px;
+margin:0px;
+padding:0px;
+}
+
+h1:first-letter {
+color: #C66; 
+} 
+
+h2{
+	font-family:century gothic;
+	font-size:17pt;
+	line-height:17pt;
+	text-transform:uppercase;
+	text-align:left;
+	letter-spacing:1px;
+	font-weight:normal;
+	display:block;
+	background-color:#d0d0d0;
+	padding-left:4px;
+	padding-right:4px;
+	border-bottom-width:1px;
+	border-bottom-style:dashed;
+	border-bottom-color:#a1a1a1;
+}
+
+h3{
+	font-family:century gothic;
+	font-size:17pt;
+	text-align:left;
+}
+
+/*-------------------------------------------  table -------------------------------------------------------*/
+
+
+/*-------------------------------------------  top section-------------------------------------------------------*/
+.main{
+
+	overflow: auto;
+	/*border-bottom: 1px solid #bbb8bf;*/
+}
+.main p{
+	width: 67.5%;
+	float: left;
+	font-size: 1.4em;
+
+}
+.main figure{
+	float: right;
+	margin: 15px 0 20px 0;
+	width: 30%;
+
+}
+figure img{
+	width: 100%;
+}
+.sec{
+	clear: both;
+	margin-top: 40px;
+	
+}
+
+/*-------------------------------------------  links -------------------------------------------------------*/
+
+a.link1:link, a.link1:visited, a.link1:active{ 
+font-family:century gothic;
+background-color:#d2d2d2;
+margin:1px;
+padding-right:2px;
+padding-top:2px;
+padding-bottom:2px;
+padding-left:7px;
+color:#111111;
+font-family:arial;
+font-size:8pt;
+line-height:9pt;
+font-weight:normal;
+text-decoration:none;
+font-weight:normal;
+text-align:left;
+display:block;
+border-width:1px;
+border-style:solid;
+border-color:#a1a1a1;
+}
+
+
+a.link1:hover{ 
+background-color:#ececec;
+margin:1px;
+padding-right:2px;
+padding-top:2px;
+padding-bottom:2px;
+padding-left:7px;
+font-family:arial;
+font-size:8pt;
+line-height:9pt;
+color:#a1a1a1;
+font-weight:normal;
+text-decoration:none;
+font-weight:normal;
+text-align:left;
+display:block;
+border-width:1px;
+border-style:solid;
+border-color:#a1a1a1;
+}
+
+a.link2:link, a.link2:visited, a.link2:active{ 
+background-color:black;
+margin:1px;
+padding-right:2px;
+padding-top:2px;
+padding-bottom:2px;
+padding-left:7px;
+color:#C66;
+font-family:arial;
+font-size:8pt;
+line-height:9pt;
+font-weight:normal;
+text-decoration:none;
+font-weight:normal;
+text-align:left;
+display:block;
+border-width:1px;
+border-style:solid;
+border-color:white;
+}
+
+a.link2:hover{ 
+font-family:arial;
+font-size:8pt;
+line-height:9pt;
+color:#CCC;
+font-weight:normal;
+text-decoration:none;
+font-weight:normal;
+text-align:left; 
+}
+
+/*-------------------------------------------  footer-------------------------------------------------------*/
+footer{
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding-bottom: 20px;
+	text-align: center;
+	width: 90%;
+}
+/* ------------------------------------------- Media Queries -------------------------------------------------------*/
+
+
+	/* Smaller than standard 960 (devices and browsers) */
+	@media only screen and (max-width: 959px) {
+		#wrapper{
+			width:98%;
+		}	
+	}
+	/* Tablet Portrait size to standard 960 (devices and browsers) */
+	@media only screen and (min-width: 768px) and (max-width: 959px) {
+
+		#wrapper{
+			width:98%;
+
+		}
+		.main figure{
+			width: 35%;
+		}
+		.main figure img{
+			width: 100%;	
+		}
+		.main p{
+			width: 60%;	
+		}
+		td{
+			width: 50%;
+		}
+	}
+
+	/* All Mobile Sizes (devices and browser) */
+	@media only screen and (max-width: 767px) {
+		#wrapper{
+			width: 95%;
+	
+		}
+		.main, header, h2{
+			padding-left: 1%;
+			padding-right: 1%;
+		}
+		.main figure{
+			width: 100%;
+			float: right;
+		}
+		.main p{
+			width: 98%;
+		}
+		.main figure img{
+			width: 100%;
+		}
+		td{
+			width: 50%;
+		}
+	}
+
+	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+		#wrapper{
+			width: 98%;
+			min-width: 480px;
+			max-width: 767px;
+		}
+		.main p{
+			width: 100%;
+		}
+		td{
+
+			width: 50%;
+		}
+	}
+	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+	@media only screen and (max-width: 479px) {
+		#wrapper{
+			width: 96%;
+		}
+		figure {
+			display: none;
+		}
+		figcaption{
+			display: none;
+		}
+		.sec{
+			margin-top: 10px;
+		}
+		tr{
+			height: 44px;
+			line-height: 44px;
+		}
+		td{
+			width: 50%;
+			
+		}
+	}
+
+
